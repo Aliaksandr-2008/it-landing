@@ -1,0 +1,28 @@
+{
+  "name": "itvdn",
+  "version": "1.0.0",
+  "description": "This is landing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aliaksandr-2008/it-landing.git"
+  },
+  "author": "Aliaksandr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aliaksandr-2008/it-landing/issues"
+  },
+  "homepage": "https://github.com/Aliaksandr-2008/it-landing#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-pug": "^3.3.0",
+    "gulp-sass": "^3.1.0"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1"
+  }
+}
