@@ -4,6 +4,7 @@ const pug = require('gulp-pug');
 const sass = require('gulp-sass');
 const spritesmith = require('gulp.spritesmith');
 const rimraf = require('rimraf');
+//const raname = require('gulp-rename');
 
 
 
@@ -40,12 +41,12 @@ gulp.task('templates:compile', function buildHTML() {
 gulp.task('styles:compile', function () {
   return gulp.src('source/styles/main.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('.build/css'));
+    .pipe(gulp.dest('build/css'));
 });
 
 
 // ----- sprite -----
-gulp.task('sprite', function () {
+gulp.task('sprite', function (cb) {
   var spriteData = gulp.src('source/images/icons/*.png').pipe(spritesmith({
     imgName: 'sprite.png',
     imgPath: '../images/sprite.png',
@@ -71,7 +72,7 @@ gulp.task('copy:fonts', function () {
 //------ copy images ------
 gulp.task('copy:images', function () {
   return gulp.src('./source/images/**/*.*')
-    .pipe(gulp.dest('.build/images'));
+    .pipe(gulp.dest('build/images'));
 });
  
 // --------- copy -----
