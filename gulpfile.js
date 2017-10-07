@@ -67,7 +67,7 @@ gulp.task('clean', function del(cb){
 //------ copy fonts ------
 gulp.task('copy:fonts', function () {
   return gulp.src('./source/fonts/**/*.*')
-    .pipe(gulp.dest('.build/fonts'));
+    .pipe(gulp.dest('build/fonts'));
 });
 
 //------ copy images ------
