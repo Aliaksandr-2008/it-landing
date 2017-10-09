@@ -28,7 +28,7 @@
 
 			.approach__step {
 				right: auto;
-				left: -52px;
+				//left: -52px;
 			}
 		}
 	}
@@ -61,7 +61,7 @@
 	&__step {
 		@include centerer-y();
 
-		right: -58px;
+		right: -103px;
 		width: 103px;
 		height: 103px;
 		padding-top: 10px;
