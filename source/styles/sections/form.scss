@@ -3,6 +3,10 @@
 	color: #fff;
 	background-color: #1287bf;
 
+	@media (max-width: 810px) {
+		padding: 50px 0 50px 0;
+	}
+
 	.title {
 		margin-bottom: 12px;
 	}
@@ -44,6 +48,11 @@
 	border-radius: 3px;
 	color: #828282;
 	text-align: center;background-color: #FFF;
+
+	@media (max-width: 810px) {
+		width: 90%;
+		padding: 25px;
+	}
 
 	&-container {
 		padding-top: 30px;
